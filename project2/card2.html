@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+        }
+        .box{
+            height: 89%;
+            width: 28%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:25px;
+            background-color: azure;
+            border-radius: 20px;
+        }
+        img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        h1{
+            font-family: 'Fasthand', cursive;
+            font-family: 'Oswald', sans-serif;
+            font-size: 25px;
+        }
+        #p1{
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 20px;
+            color: #4a5f6bfe;
+        }
+        .innerbox{
+            display: flex;
+            width: 85%;
+            height: 13%;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+            justify-content: space-between;
+            background-color:hsl(240, 10%, 86%);
+            border-radius: 10px;
+        }
+        
+        #p2{
+            font-weight: 700;
+            font-size: large      
+        }
+        section{
+            width: 50%;
+        }
+
+        #music{
+            width: 40px;
+            height: 40px;
+        }
+        #p3{
+            color: #4a5f6bfe;
+
+        }
+        a{
+            color: rgb(4, 4, 155);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 2s linear 0.1s;
+        }
+        a:hover{
+            text-decoration: none;
+            color: rgb(26, 26, 216);
+        }
+
+        
+
+        .b1{
+            width: 85%;
+            height: 11%;
+            font-size: large;
+            color: white;
+            background-color: rgb(66, 66, 216);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 100;
+            font-family: "Red Hat Display", sans-serif;
+            transition: all .1s linear ;
+            font-weight: 700;
+            box-shadow: 0 10px 8px 1px hsla(250, 63%, 80%, 0.539);
+            border: none;
+
+        }
+
+        .b1:hover{
+            background-color: rgb(97, 97, 239);
+
+        }
+        .b2{
+            color: grey;
+            border: none;
+            transition: all .2s linear ;
+        }
+        .b2:hover{
+            transform: scale(1.1);
+        }
+       
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="cover img.svg">
+            <h1>Order Summary</h1>
+            <p id="p1">You can now listen to millions of songs, audibooks, and podcasts on any device anywhere you like!</p>
+            <div class="innerbox">
+                <img id="music" src="icon-music.svg">
+                <section>
+                    <p id="p2">Annual Plan</p>
+                    <p id="p3">$59.99/year</p>
+                </section>
+                <a href="#">Change</a>
+            </div>
+            <button class="b1">Proceeds to Payment </button>
+            <button class="b2">Cancel Order</button>
+        </div>
+    </div>
+</body>
+</html>
